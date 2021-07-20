@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
+import { MatCardModule } from '@angular/material/card';
+
 // import { MatSliderModule } from '@angular/material/slider';
 
 import { LineItemsComponent } from '../shared/line-items/line-items.component';
@@ -38,6 +40,7 @@ export const invoiceRoutes = [
   imports: [
     CommonModule,
     MatTableModule,
+    MatCardModule,
     RouterModule.forChild(invoiceRoutes),
     // MatSliderModule
   ],
