@@ -1,0 +1,74 @@
+[
+    {
+        "type":"vendor_data",
+        "name":"Freguesia Cheese",
+        "address":"333 Fake St",
+        "city":"Place",
+        "zip":"12345",
+        "mapped": true
+     },
+    {
+       "type":"bill_to",
+       "name":"Monty's",
+       "address":"333 Fake St",
+       "city":"Place",
+       "zip":"12345"
+    },
+    {
+       "type":"ship_to",
+       "name":"Monty's Ship to",
+       "address":"222 Ship St",
+       "city":"Place2",
+       "zip":"12345"
+    },
+    {
+       "type":"invoice_data",
+       "invoice_no":"123456",
+       "invoice_type":"Receipt",
+       "restaurant": "Monty;s Cheese Shop",
+       "posting_date":"11/11/2021",
+       "invoice_date":"12/11/2021",
+       "due_date":"12/12/2021",
+       "net_terms":"Net 30"
+    },
+    {
+       "type":"line_item",
+       "item_number":"1",
+       "name":"Gruyere",
+       "quantity":"3",
+       "unit_price":"1",
+       "total":"Site GM",
+       "description":"Dairy 4410 - 6680",
+       "unit":"Lb"
+    },
+    {
+       "type":"line_item",
+       "item_number":"1",
+       "name":"Gruyere",
+       "quantity":"2",
+       "unit_price":"1",
+       "total":"Site GM",
+       "description":"Dairy 4410 - 6680",
+       "unit":"bag"
+    },
+    {
+       "type":"line_item",
+       "item_number":"1",
+       "name":"Gruyere",
+       "quantity":"1",
+       "unit_price":"1",
+       "total":"Site GM",
+       "description":"Dairy 4410 - 6680",
+       "unit":"Lb"
+    },
+    {
+       "type":"line_item",
+       "item_number":"1",
+       "name":"Something",
+       "quantity":"5",
+       "unit_price":"1",
+       "total":"Site GM",
+       "description":"Dairy 4410 - 6680",
+        "unit":"bag"
+    }
+ ]

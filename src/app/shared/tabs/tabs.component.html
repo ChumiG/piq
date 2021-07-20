@@ -1,0 +1,14 @@
+<div class="container-fluid mt-2">
+    <div class="row">
+        <!-- Content column -->
+        <div class="col-xl-12 col-lg-9 col-md-12 col-sm-12 grid-container">
+            <nav mat-tab-nav-bar >
+                <a mat-tab-link *ngFor="let tab of tabs"
+                (click)="activeLink = tab"
+                [active]="activeLink == tab"
+                [routerLink]="tab"> {{tab}}</a>
+            </nav>
+            <router-outlet appSeo appBreadcrumbs></router-outlet>
+        </div>
+    </div>
+</div>
