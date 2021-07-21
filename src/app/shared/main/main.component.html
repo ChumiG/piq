@@ -1,0 +1,45 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 p-2"><img alt=""></div>
+        <div class="col-sm-6">
+            <button mat-raised-button disabled [matMenuTriggerFor]="menu" class="round"> DIRECT</button>
+            <button mat-raised-button [matMenuTriggerFor]="menu" class="float-right">          
+                <span>More</span> 
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <button mat-raised-button color="primary" class="">Approve</button>
+            <div class="clearfix"></div>
+            <hr>
+           <app-header></app-header>
+           <app-tabs></app-tabs>
+        </div>
+    </div>
+</div>
+
+
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <span>Export</span>
+    </button>
+    <button mat-menu-item>
+      <span>Mark as exported</span>
+    </button>
+    <hr>
+    <button mat-menu-item>
+      <span>Setup Vendor</span>
+    </button>
+    <hr>
+    <button mat-menu-item>
+        <mat-icon>flag</mat-icon>
+      <span>Flag Invoice</span>
+    </button>
+    <button mat-menu-item>
+      <span>Archive Invoice</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>delete</mat-icon>
+      <span>Delete Invoice</span>
+    </button>
+  </mat-menu>

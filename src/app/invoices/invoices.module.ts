@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import { LineItemsComponent } from '../shared/line-items/line-items.component';
 import { TabsComponent } from '../shared/tabs/tabs.component';
 import { HistoryComponent } from '../shared/history/history.component';
+import { MainComponent } from '../shared/main/main.component';
 
 
 
@@ -25,7 +26,7 @@ export const invoiceRoutes = [
   },
   {
     path: 'test',
-    component: TabsComponent,
+    component: MainComponent,
     children:[
       // { path: 'Items',    component: PoItemsComponent, resolve:{data: PoItemsResolver} },
       { path: 'Items',    component: LineItemsComponent },

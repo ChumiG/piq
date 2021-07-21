@@ -11,8 +11,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatSliderModule } from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+
+
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
+import { MainComponent } from './shared/main/main.component';
+import { HeaderComponent } from './shared/header/header.component';
+
 
 
 
@@ -28,7 +36,9 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     TabsComponent,
-    HistoryComponent
+    HistoryComponent,
+    MainComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +49,10 @@ const routes: Routes = [
     MatTableModule,
     MatSliderModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule
     
   ],
   providers: [],

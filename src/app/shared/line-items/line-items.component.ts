@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTable, MatTableDataSource } from '@angular/material/table';
 import { HttpClient } from '@angular/common/http';
+// import { AllDataService } from '../../services/all-data.service';
 
 
 
@@ -11,7 +12,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LineItemsComponent implements OnInit {
   @ViewChild(MatTable) table: MatTable<any>;
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    // public data: AllDataService
+    ) { }
 
   public displayedColumns = 
     [
@@ -26,7 +30,6 @@ export class LineItemsComponent implements OnInit {
   
 
   ngOnInit(): void {
-    // this.dataSource = this.dataSource.filteredData;
     var wsData = this.http.get('./assets/data.json', {responseType: 'text'});
 
     wsData.subscribe(data => {
