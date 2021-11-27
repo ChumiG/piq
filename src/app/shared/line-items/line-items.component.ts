@@ -35,7 +35,7 @@ export class LineItemsComponent implements OnInit {
     wsData.subscribe(data => {
       var tableData = JSON.parse(data);
       tableData = tableData.filter( x=> x.type === 'line_item')
-      console.log(tableData)
+      // console.log(tableData);
       this.dataSource = new MatTableDataSource(tableData); 
       this.table.dataSource = this.dataSource;
     })

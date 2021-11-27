@@ -1,0 +1,32 @@
+.icon-wrapper{
+    position:relative;
+    float:left;
+}
+
+i .fa-shopping-cart{   
+    width:100px;
+    text-align:center;
+    vertical-align:middle;
+}
+.badge{
+    background: rgba(255, 40, 40, 0.9);
+    width: auto;
+    height: auto;
+    margin: 0;
+    border-radius: 50%;
+    position:absolute;
+    top: 5px;
+    right:-30px;
+    padding:5px;
+}
+
+.shopping-cart {
+    position: fixed;
+    top: 1em;
+    right: 3em;
+}
+.sign-out {
+    position: fixed;
+    top: 1em;
+    right: 6em;
+}

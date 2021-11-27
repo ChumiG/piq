@@ -13,7 +13,7 @@ export class AllDataService {
     wsData.subscribe(data => {
       var tableData = JSON.parse(data);
       tableData = tableData.filter( x=> x.type === 'line_item')
-      console.log(tableData)
+      // console.log(tableData)
       
     })
     return this.wsData;

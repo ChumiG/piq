@@ -1,0 +1,82 @@
+[
+    {
+        "id":        1,
+        "name":      "Rhino",
+        "quantity":  0,
+        "category":  "animal",
+        "price":     25,
+        "image":     "http://lorempixel.com/200/150/animals/1"
+    },
+    {
+        "id":        2,
+        "name":      "Bento",
+        "quantity":  0,
+        "category":  "food",
+        "price":     20,
+        "image":     "http://lorempixel.com/200/150/food/4"
+    },
+    {
+        "id":        3,
+        "name":      "Laptop",
+        "quantity":  0,
+        "category":  "tech",
+        "price":     20,
+        "image":     "http://lorempixel.com/200/150/technics/3"
+    },
+    {
+        "id":        4,
+        "name":      "TV",
+        "quantity":  0,
+        "category":  "tech",
+        "price":     20,
+        "image":     "http://lorempixel.com/200/150/technics/9"
+    },
+    {
+        "id":        5,
+        "name":      "Gorilla",
+        "quantity":  0,
+        "category":  "animal",
+        "price":     20,
+        "image":     "http://lorempixel.com/200/150/animals/2"
+    },
+    {
+        "id":        6,
+        "name":      "Meat",
+        "quantity":  0,
+        "category":  "food",
+        "price":     20,
+        "image":     "http://lorempixel.com/200/150/food/2"
+    },
+    {
+        "id":        7,
+        "name":      "Tiger",
+        "quantity":  1,
+        "category":  "animal",
+        "price":     20,
+        "image":     "http://lorempixel.com/200/150/animals/3"
+    },
+    {
+        "id":        8,
+        "name":      "Tablet",
+        "quantity":  0,
+        "category":  "tech",
+        "price":     20,
+        "image":     "http://lorempixel.com/200/150/technics/1"
+    },
+    {
+        "id":        9,
+        "name":      "Bread",
+        "quantity":  0,
+        "category":  "food",
+        "price":     20,
+        "image":     "http://lorempixel.com/200/150/food/7"
+    },
+    {
+        "id":        10,
+        "name":      "Headphones",
+        "quantity":  0,
+        "category":  "tech",
+        "price":     20,
+        "image":     "http://lorempixel.com/200/150/technics/5"
+    }
+]

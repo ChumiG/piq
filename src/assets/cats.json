@@ -1,0 +1,15 @@
+[
+    {
+        "id":        1,
+        "name":      "animal"
+    },
+    {
+        "id":        2,
+        "name":      "tech"
+    },
+    {
+        "id":        3,
+        "name":      "food"
+    }
+]
+    

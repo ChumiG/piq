@@ -1,0 +1,67 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" style="min-width: 200px;">
+    <div *ngFor="let product of masterProducts">
+      <div *ngIf="product.quantity">
+        <span (click)="addToCart(product)"><i class="fa fa-plus"></i></span> &nbsp;  
+        <span (click)="removeFromCart(product)" *ngIf="product.quantity > 1"><i class="fa fa-minus"></i></span> 
+        <span (click)="removeFromCart(product)" *ngIf="product.quantity === 1"><i class="fa fa-trash"></i></span>  
+        {{product.name}} x{{product.quantity}} @{{product.price | currency}} </div>
+      <div *ngIf="product.quantity" style="text-align:right;">
+        {{product.quantity*product.price | currency}}
+      </div>
+    </div>
+    <hr>
+    <strong>Total: {{getTotal() | currency}}</strong>
+  </mat-drawer>
+
+  <div class="shopping-cart" data-toggle="tooltip" title="Toggle Shopping Cart">
+    <span type="button" mat-button (click)="drawer.toggle()">
+      <div class="icon-wrapper" *ngIf="itemsInCart()">
+        <i class="fa fa-shopping-cart fa-2x"></i>
+        <span class="badge">{{itemsInCart()}}</span>
+      </div>  
+    </span>     
+  </div>
+
+  <app-logout class="sign-out"></app-logout>
+
+  <div class="container">
+    <div class="col-sm-12">
+      <h1>Product List</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 pb-3">
+        <button class="btn btn-primary col-sm-12" (click)="filterByCat('all')">Show all categories</button>
+      </div>
+      <div *ngFor="let cat of categories" class="col-lg-3 pb-3">
+        <button class="btn btn-primary col-sm-12" (click)="filterByCat(cat.name)">Show all: {{cat.name}}</button>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div *ngFor="let product of productData" class="col-lg-3 col-md-4 col-sm-6 col-12 pb-5">
+        <mat-card class="example-card mat-elevation-z3">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{product.name}} </mat-card-title>
+            <mat-card-subtitle><i>Category: {{product.category}}</i></mat-card-subtitle>
+          </mat-card-header>
+          <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+          <img mat-card-image src="https://picsum.photos/200/100" alt="Photo of a Shiba Inu">
+          <!-- <img mat-card-image [src]="product.image" alt="Photo of a Shiba Inu"> -->
+          <mat-card-content>
+            <p>
+              Currently in Cart: {{product.quantity}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button *ngIf="!product.quantity" mat-button (click)="addToCart(product)">ADD TO CART</button>
+            <button *ngIf="product.quantity" mat-button (click)="addToCart(product)"> <i class="fa fa-plus"></i></button>
+            <button mat-button *ngIf="product.quantity === 1"  (click)="removeFromCart(product)" ><i class="fa fa-trash"></i></button>
+            <button mat-button *ngIf="product.quantity > 1"  (click)="removeFromCart(product)" > <i class="fa fa-minus"></i></button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</mat-drawer-container>
