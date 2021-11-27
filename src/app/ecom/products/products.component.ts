@@ -31,7 +31,7 @@ export class ProductsComponent implements OnInit {
 
   logout():void{
     localStorage.setItem("loggedIn", "");
-    this.router.navigate(["/requireLogin"]);
+    this.router.navigate(["/requireLogin"]); 
   }
 
   addToCart(product):void{
