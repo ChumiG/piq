@@ -1,7 +1,5 @@
 # Piq
 
-Line Item test on http://localhost:4444/invoice/test/Items
-
 
 
 
